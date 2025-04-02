@@ -14,7 +14,6 @@ compileJava {
 }
 
 dependencies {
-    testImplementation group: 'junit', name: 'junit', version: '4.11'
     implementation group: 'org.mindrot', name: 'jbcrypt', version: '0.3m'
     implementation group: 'org.springframework', name: 'spring-web', version: '3.1.1.RELEASE'
     implementation group: 'org.apache.sling', name: 'org.apache.sling.engine', version: '2.0.4-incubator'
@@ -24,8 +23,9 @@ dependencies {
     implementation group: 'org.apache.kafka', name: 'kafka_2.11', version: '0.9.0.1'
     implementation group: 'net.bull.javamelody', name: 'javamelody-core', version: '1.59.0'
     implementation group: 'com.orientechnologies', name: 'orientdb-server', version: '2.1.9'
+    implementation group: 'org.apache.curator', name: 'curator-test', version: '4.3.0'
     api group: 'org.apache.zookeeper', name: 'zookeeper', version: '3.9.1'
-    api group: 'org.apache.curator', name: 'curator-recipes', version: '4.2.0'
+    api group: 'org.apache.curator', name: 'curator-recipes', version: '4.3.0'
 }
 
 defaultTasks 'build'
