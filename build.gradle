@@ -25,6 +25,7 @@ dependencies {
     implementation group: 'net.bull.javamelody', name: 'javamelody-core', version: '1.59.0'
     implementation group: 'com.orientechnologies', name: 'orientdb-server', version: '2.1.9'
     api group: 'org.apache.zookeeper', name: 'zookeeper', version: '3.9.1'
+    api group: 'org.apache.curator', name: 'curator-recipes', version: '4.2.0'
 }
 
 defaultTasks 'build'
